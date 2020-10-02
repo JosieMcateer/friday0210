@@ -1,4 +1,8 @@
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 
@@ -20,7 +24,7 @@ namespace ConsoleApp1
             string singles = "";
 
 
-            switch (a / 1000)
+            switch ((a % 10000) / 1000)
 
             {
 
@@ -45,8 +49,8 @@ namespace ConsoleApp1
             }
 
 
-                    // hundreds
-                    switch (a / 100)
+// hundreds
+               switch ((a % 1000) / 100)
 
             {
 
@@ -157,7 +161,7 @@ namespace ConsoleApp1
 
             }
 
-            Console.WriteLine(a + ": " + thousands + "" + hundreds + " " + tens + " " + singles);
+            Console.WriteLine(a + ": " + thousands + " " + hundreds + " " + tens + " " + singles);
 
         }
 

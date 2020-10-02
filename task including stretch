@@ -19,6 +19,8 @@ namespace ConsoleApp1
             string singles = "";
 
 
+// modulas operator thousands
+
             switch ((a % 10000) / 1000)
 
             {
@@ -155,6 +157,7 @@ namespace ConsoleApp1
                 }
 
             }
+            // if the number is between 1-999 then print the number: words, if not print invalid number
 
             if (a >= 0 && a <= 9999)
 

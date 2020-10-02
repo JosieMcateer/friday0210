@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 
@@ -156,8 +161,16 @@ namespace ConsoleApp1
 
             }
 
-            Console.WriteLine(a + ": " + thousands + " " + hundreds + " " + tens + " " + singles);
+            if (a >= 0 && a <= 10000)
 
+            {
+                Console.WriteLine(a + ": " + thousands + " " + hundreds + " " + tens + " " + singles);
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
         }
 
     }

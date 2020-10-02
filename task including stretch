@@ -164,7 +164,7 @@ namespace ConsoleApp1
             if (a >= 1 && a <= 9999)
 
             {
-                Console.WriteLine(a + ": " + thousands + " " + hundreds + tens + " " + singles);
+                Console.WriteLine(a + ": " + thousands + " " + hundreds + " " + tens + " " + singles);
             }
 
             else

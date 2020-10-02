@@ -1,0 +1,166 @@
+
+
+namespace ConsoleApp1
+
+{
+
+    class task
+
+    {
+
+        public void inttochar(int a)
+
+        {
+            string thousands = "";
+
+            string hundreds = "";
+
+            string tens = "";
+
+            string singles = "";
+
+
+            switch (a / 1000)
+
+            {
+
+                case 1: thousands = "one thousand"; break;
+
+                case 2: thousands = "two thousand"; break;
+
+                case 3: thousands = "three thousand"; break;
+
+                case 4: thousands = "four thousand"; break;
+
+                case 5: thousands = "five thousand"; break;
+
+                case 6: thousands = "six thousand"; break;
+
+                case 7: thousands = "seven thousand"; break;
+
+                case 8: thousands = "eight thousand"; break;
+
+                case 9:
+                    thousands = "nine thousand"; break;
+            }
+
+
+                    // hundreds
+                    switch (a / 100)
+
+            {
+
+                case 1: hundreds = "one hundred"; break;
+
+                case 2: hundreds = "two hundred"; break;
+
+                case 3: hundreds = "three hundred"; break;
+
+                case 4: hundreds = "four hundred"; break;
+
+                case 5: hundreds = "five hundred"; break;
+
+                case 6: hundreds = "six hundred"; break;
+
+                case 7: hundreds = "seven hundred"; break;
+
+                case 8: hundreds = "eight hundred"; break;
+
+                case 9: hundreds = "nine hundred"; break;
+
+            }
+
+ // tens           
+
+            switch ((a % 100) / 10)
+
+            {
+
+                case 1: tens = "ten"; break;
+
+                case 2: tens = "twenty"; break;
+
+                case 3: tens = "thirty"; break;
+
+                case 4: tens = "fourty"; break;
+
+                case 5: tens = "fifty"; break;
+
+                case 6: tens = "sixty"; break;
+
+                case 7: tens = "seventy"; break;
+
+                case 8: tens = "eighty"; break;
+
+                case 9: tens = "ninety"; break;
+
+            }
+
+            
+// singles
+            if ((a % 100) / 10 != 1)
+
+            {
+
+                switch ((a % 100) % 10)
+
+                {
+
+                    case 1: singles = "one"; break;
+
+                    case 2: singles = "two"; break;
+
+                    case 3: singles = "three"; break;
+
+                    case 4: singles = "four"; break;
+
+                    case 5: singles = "five"; break;
+
+                    case 6: singles = "six"; break;
+
+                    case 7: singles = "seven"; break;
+
+                    case 8: singles = "eight"; break;
+
+                    case 9: singles = "nine"; break;
+
+                }
+
+            }
+            else
+
+            {
+
+                switch (a % 100)
+
+                {
+
+                    case 11: tens = "eleven"; break;
+
+                    case 12: tens = "twelve"; break;
+
+                    case 13: tens = "thirteen"; break;
+
+                    case 14: tens = "fourteen"; break;
+
+                    case 15: tens = "fifteen"; break;
+
+                    case 16: tens = "sixteen"; break;
+
+                    case 17: tens = "seventeen"; break;
+
+                    case 18: tens = "eighteen"; break;
+
+                    case 19: tens = "nineteen"; break;
+
+                }
+
+            }
+
+            Console.WriteLine(a + ": " + thousands + "" + hundreds + " " + tens + " " + singles);
+
+        }
+
+    }
+
+}
